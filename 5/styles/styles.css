@@ -1,0 +1,279 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/pt-sans-regular.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/pt-sans-bold.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    background-color: #F2F2F2;
+  }
+
+  .main-container {
+    flex-grow: 1;
+  }
+
+  .navigation {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .navigation-list {
+    margin: 0;
+    padding: 0;
+    width: 339px;
+  }
+
+  .navigation-user {
+    max-width: 250px;
+    margin-left: auto;
+  }
+
+  .button {
+    font-family: 'PT Sans';
+  }
+
+  .main-header {
+    font-family: 'PT Sans' sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #000000;
+  }
+
+
+  .navigation-link {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #000000;
+  }
+
+  .advantages-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .advantages-item {
+    width: 400px;
+  }
+
+  .page-footer-container {
+    display: flex;
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .footer-contacts {
+    width: 400px;
+  }
+
+  .footer-social {
+    margin-left: auto;
+
+  }
+
+  .advantages-title {
+    font-family: 'PT Sans' sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  .advantages-discription {
+    font-family: 'PT Sans' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #333333;
+  }
+
+  .about-sedona-title {
+    position: absolute;
+    left: 24.17%;
+    right: 24.17%;
+    top: 72.23%;
+    bottom: 18.38%;
+    font-family: 'PT Sans' sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  .about-sedona-dicription {
+    position: absolute;
+    left: 22.92%;
+    right: 22.83%;
+    top: 84.88%;
+    bottom: 11.73%;
+    font-family: 'PT Sans' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #333333;
+
+  }
+
+
+    .subscription-title {
+    font-family: 'PT Sans'sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    }
+
+    .subscription-description {
+    font-family: 'PT Sans'sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    }
+
+    .button-sub {
+    font-family: 'PT Sans'sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+
+    }
+
+  .contacts-phone {
+    font-family: 'PT Sans'sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+
+  }
+
+
+  .inner-header-title {
+    font-family: 'PT Sans'sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+    color: #FFFFFF;
+  }
+
+  .catalog-filter-title {
+    font-family: 'PT Sans'sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+  }
+
+  .catalog-filter-item {
+    font-family: 'PT Sans'sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+  }
+
+  .product-card-link {
+    font-family: 'PT Sans'sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+  }
+  .product-card-price {
+  font-family: 'PT Sans'sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+  }
+
+  .page-container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .html {
+    height: 100%;
+  }
+
+  .navigation-logo {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .catalog-products {
+    display: flex;
+  }
+
+  .catalog-filter-title {
+    width: 150.43px;
+    margin-right: 70px;
+  }
+
+  .catalog-right-column {
+    width: 1200px;
+    display: flex;
+  }
+  .main-footer-container {
+    display: flex;
+    width: 940px;
+    margin: 0 auto;
+  }
