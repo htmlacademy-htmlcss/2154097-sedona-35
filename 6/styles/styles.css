@@ -1,0 +1,349 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/pt-sans-regular.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/pt-sans-bold.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #000000;
+    background-color: #F2F2F2;
+
+  }
+
+  .main-container {
+    flex-grow: 1;
+    margin-top: -10px ;
+  }
+
+  .navigation {
+    display: flex;
+    width: 1060px;
+    margin: 0 auto;
+  }
+
+  .navigation-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    width: 410px;
+    list-style-type: none;
+  }
+
+  .navigation-user {
+    width: 300px;
+    margin-left: auto;
+  }
+
+  .main-header {
+    position: relative;
+  }
+
+
+  .navigation-link {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    padding: 20px 16px;
+    margin: 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+  }
+
+  .navigation-link-button {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-top: 14px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    width: 160px;
+    height: 36px;
+    background-color: #756157;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .main-logo {
+    background-image: url(../images/main-logo-dekor2.svg), url(../images/index-background.jpg);
+    background-position: bottom, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 51px;
+    padding-bottom: 82px;
+  }
+
+  .main-logo-img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .advantages-item {
+    padding: 92px 85px 111px 85px;
+    width: 230px;
+  }
+
+  .advantages-item-blue {
+    background-color: #82B3D3;
+  }
+
+  .advantages-item-gray {
+    background-color: rgba(131, 179, 211, 0.2);
+  }
+
+  .advantages-icon {
+    display: block;
+    margin: 0 auto;
+  }
+
+
+  .page-footer-container {
+    display: flex;
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .footer-contacts {
+    width: 400px;
+  }
+
+  .footer-social {
+    margin-left: auto;
+
+  }
+  .footer-social-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .advantages-title {
+    font-family: 'PT Sans' sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  .advantages-discription {
+    font-family: 'PT Sans' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #333333;
+  }
+  .about-sedona {
+    padding: 69px 290px 90px 290px;
+
+
+  }
+
+
+  .about-sedona-title {
+    font-family: 'PT Sans' sans-serif;
+    margin: 0 0 25px 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  .about-sedona-dicription {
+    font-family: 'PT Sans' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #333333;
+    margin: 0;
+
+  }
+
+
+    .subscription-title {
+    font-family: 'PT Sans'sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    }
+
+    .subscription-description {
+    font-family: 'PT Sans'sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    }
+
+    .button-sub {
+    font-family: 'PT Sans'sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+
+    }
+
+  .contacts-phone {
+    font-family: 'PT Sans'sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+
+  }
+
+
+  .inner-header-title {
+    font-family: 'PT Sans'sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+    color: #FFFFFF;
+  }
+
+  .catalog-filter-title {
+    font-family: 'PT Sans'sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+  }
+
+  .catalog-filter-item {
+    font-family: 'PT Sans'sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+  }
+
+  .product-card-link {
+    font-family: 'PT Sans'sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    list-style-type: none;
+  }
+  .product-card-price {
+  font-family: 'PT Sans'sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+  }
+
+  .page-container {
+    width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    background: #FFFFFF;
+  }
+
+  .html {
+    height: 100%;
+  }
+
+  .navigation-logo {
+    display: block;
+  }
+
+  .catalog-products {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  .catalog-filter-title {
+    width: 150.43px;
+    margin-right: 70px;
+  }
+
+  .catalog-right-column {
+    width: 1200px;
+    display: flex;
+  }
+  .main-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
