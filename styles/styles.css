@@ -119,6 +119,7 @@ body {
   .advantages-item {
     padding: 92px 85px 111px 85px;
     width: 400px;
+    box-sizing: border-box;
   }
 
   .advantages-container-city {
@@ -126,13 +127,26 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    box-sizing: border-box;
+    width: 100%;
   }
+
+  .advantages-container-bridge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
 
   .advantages-item-blue {
     display: flex;
     padding: 0;
     background-color: #82B3D3;
+    width: 100%;
+    box-sizing: border-box;
 
   }
 
@@ -230,6 +244,7 @@ body {
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
+    cursor: pointer;
     color: #FFFFFF;
     background-color: #82B3D3;
     border-radius: 0 10px 10px 0;
@@ -321,6 +336,17 @@ body {
     text-align: center;
     color: #FFFFFF;
     }
+
+    .catalog-logo {
+      background-image: url(../images/background-catalog.png);
+      background-position: bottom, center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-top: 51px;
+      padding-bottom: 82px;
+
+    }
+
 
   .inner-header-title {
     font-family: 'PT Sans'sans-serif;
