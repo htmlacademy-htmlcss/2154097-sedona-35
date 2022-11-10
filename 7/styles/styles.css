@@ -119,6 +119,7 @@ body {
   .advantages-item {
     padding: 92px 85px 111px 85px;
     width: 400px;
+    box-sizing: border-box;
   }
 
   .advantages-container-city {
@@ -126,13 +127,26 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    box-sizing: border-box;
+    width: 100%;
   }
+
+  .advantages-container-bridge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
 
   .advantages-item-blue {
     display: flex;
     padding: 0;
     background-color: #82B3D3;
+    width: 100%;
+    box-sizing: border-box;
 
   }
 
@@ -230,6 +244,7 @@ body {
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
+    cursor: pointer;
     color: #FFFFFF;
     background-color: #82B3D3;
     border-radius: 0 10px 10px 0;
@@ -322,13 +337,43 @@ body {
     color: #FFFFFF;
     }
 
+    .catalog-logo {
+      background-image: url(../images/background-catalog.png);
+      background-position: bottom, center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-top: 51px;
+      padding-bottom: 82px;
+
+    }
+
+
   .inner-header-title {
+    margin-top: 0;
+    margin-bottom: 35px;
     font-family: 'PT Sans'sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 60px;
     line-height: 78px;
     color: #FFFFFF;
+  }
+
+  .breadcrumbs {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 114px;
+    height: 21px;
+    list-style: none;
+  }
+
+  .breadcrumbs-link {
+
   }
 
   .catalog-filter-title {
@@ -473,6 +518,42 @@ body {
     list-style: none;
     padding: 0 70px 40px 70px;
   }
+
+  .pagination {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .pagination-item {
+    margin-right: 8px;
+    width: 60px;
+    height: 60px;
+    padding:
+  }
+
+  .pagination-current {
+    width: 60px;
+    height: 60px;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+  }
+
+  .pagination-link {
+      display: block;
+      box-sizing: border-box;
+      width: 60px;
+      height: 60px;
+      padding: 12px 25px  13px;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 36px;
+      color: #FFFFFF;
+      background-color: #82B3D3;
+      text-decoration: none;
+      border-radius: 4px;
+    }
 
   .page-footer-container {
     display: flex;
