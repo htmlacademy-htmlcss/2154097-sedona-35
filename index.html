@@ -52,11 +52,13 @@
       <section class="advantages">
         <ul class="advantages-list">
           <li class="advantages-item advantages-item-blue">
+            <div class="advantages-container-city">
             <h3 class="advantages-title">Настоящий городок</h3>
             <p class="advantages-discription">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          </li>
-          <li class="advantages-item-photo">
-            <img class="title-photo-first" src="images/true-city.jpg" width="800" height="384" alt="Отели Седоны">
+            </div>
+            <div class="photo-container">
+            <img class="title-photo-first" src="images/true-city.jpg" width="800" height="388" alt="Отели Седоны">
+            </div>
           </li>
           <li class="advantages-item">
             <h3 class="advantages-title">Небольшая площадь</h3>
@@ -70,12 +72,14 @@
             <h3 class="advantages-title">Мало туристов</h3>
             <p class="advantages-discription">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
-          <li class="advantages-item-photo">
-            <img class="title-photo-second" src="images/diablo-bridge (1).jpg" width="800" height="384" alt="Мост Дьявола">
-          </li>
           <li class="advantages-item advantages-item-blue">
+            <div class="photo-container">
+              <img class="title-photo-second" src="images/diablo-bridge (1).jpg" width="800" height="384" alt="Мост Дьявола">
+              </div>
+            <div class="advantages-container-bridge">
             <h3 class="advantages-title">Там есть мост дьявола</h3>
             <p class="advantages-discription">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            </div>
           </li>
         <li class="advantages-item advantages-item-gray">
           <div>
@@ -100,17 +104,17 @@
         </li>
         </ul>
       </section>
-      <div>
-        <h3>Заинтересовались?</h3>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a href="catalog.html">Пoиск Гостиницы в седоне</a>
+      <div class="search">
+        <h3 class="search-title">Заинтересовались?</h3>
+        <p class="search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a class="search-button" href="catalog.html">Пoиск Гостиницы в седоне</a>
       </div>
       <div class="subscription">
         <h3 class="subscription-title">Подпишитесь на рассылку</h3>
         <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="form-subscription" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="field" type="text" id="email" name="email-adress">
-          <button class="button-sub" type="submit">Подписаться</button>
+          <input class="subscription-input" type="text" id="email" name="email-adress" placeholder="Ваш e-mail">
+          <button class="subscription-button" type="submit">Подписаться</button>
         </form>
       </div>
     </main>
@@ -122,30 +126,27 @@
               <ul class="footer-social-list">
                 <li class="footer-social-item">
                   <a class="button" href="#">
+                    <img class="footer-social-logo" src="images/social-vk.svg" width="47.33" height="40" alt="Логотип Вконтакте">
                     <span class="visually-hidden">Вконтакте</span>
                   </a>
                 </li>
                 <li class="footer-social-item">
                   <a class="button" href="#">
+                    <img class="footer-social-logo2" src="images/social-telegram.svg" width="47.33" height="40" alt="Логитип Телеграм">
                     <span class="visually-hidden">Телеграм</span>
                   </a>
                 </li>
                 <li class="footer-social-item">
                   <a class="button" href="#">
+                    <img class="footer-social-logo3" src="images/social-youtube.svg" width="47.33" height="40" alt="Логитип Ютуб">
                     <span class="visually-hidden">Ютуб</span>
                   </a>
                 </li>
               </ul>
-              <img class="footer-social-logo" src="images/social-vk.svg" width="47.33" height="40" alt="Логотип Вконтакте">
-              <img class="footer-social-logo2" src="images/social-telegram.svg" width="47.33" height="40" alt="Логитип Телеграм">
-              <img class="footer-social-logo3" src="images/social-youtube.svg" width="47.33" height="40" alt="Логитип Ютуб">
             </section>
-            <section class="footer-contacts">
-              <h2 class="visually-hidden">Контакты</h2>
               <address class="contacts-address">
                 <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
               </address>
-            </section>
             <section class="footer-htmlacademy-link">
               <h2 class="visually-hidden"Ссылка на академию></h2>
               <a class="htmlacademy-link" href="https://htmlacademy.ru/">
@@ -155,8 +156,5 @@
           </div>
         </footer>
       </div>
-
-
-
       </body>
       </html>
