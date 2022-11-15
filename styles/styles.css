@@ -62,6 +62,14 @@ body {
     list-style-type: none;
   }
 
+  .navigation-item {
+    position: relative;
+  }
+
+  .navigation-item-current::after {
+    position: absolute;
+  }
+
   .navigation-user {
     width: 300px;
     margin-left: auto;
@@ -77,6 +85,27 @@ body {
     font-size: 20px;
     line-height: 24px;
     color: #000000;
+  }
+
+  .navigation-link-current::after {
+    position: absolute;
+    top: 9px;
+    left: 24px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    content: "12";
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #7DB54F;
   }
 
   .navigation-link-button {
@@ -126,13 +155,28 @@ body {
     box-sizing: border-box;
   }
 
-  .advantages-container-city {
+  .advantages-item-bricks {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 100px 85px 119px 85px;
+    width: 400px;
+    box-sizing: border-box;
+  }
+
+  .advantages-item-img {
+    padding: 80px 85px;
+  }
+
+  .advantages-container {
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
     width: 100%;
+    padding: 92px 85px 111px 92px;
   }
 
   .advantages-container-bridge {
@@ -160,7 +204,7 @@ body {
 
   .advantages-icon {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 28px auto;
   }
 
   .photo-container {
@@ -169,6 +213,7 @@ body {
   }
 
   .advantages-title {
+    position: relative;
     font-family: 'PT Sans' sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -177,6 +222,31 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: #000000;
+    margin: 0 0 30px 0;
+  }
+
+  .advantages-title-line {
+    margin: 0 0 62px 0;
+  }
+
+  .advantages-title-line::after {
+    content: "";
+    position: absolute;
+    top: 99px;
+    left: 82px;
+    width: 60px;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .advantages-title-line-white::after {
+    content: "";
+    position: absolute;
+    top: 89px;
+    left: 82px;
+    width: 60px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
   }
 
   .advantages-discription {
@@ -185,8 +255,12 @@ body {
     line-height: 21px;
     text-align: center;
     color: #333333;
+    margin: 0;
   }
 
+  .advantages-white {
+    color: #FFFFFF;
+  }
 
   .search {
     text-align: center;
@@ -236,11 +310,13 @@ body {
   }
 
   .subscription-input {
+    border: none;
     padding: 17px 19px 20px 22px;
     border-radius: 10px 0 0 10px;
   }
 
   .subscription-button {
+    border: none;
     font-weight: 700;
     line-height: 36px;
     font-size: 20px;
@@ -684,7 +760,22 @@ body {
     color: #FFFFFF;
   }
 
-  .product-card-link {
+  .product-item {
+    padding: 20px;
+    border: 1px solid #E6E6E6;
+    border-radius: 4px;
+  }
+
+  .product-card-title {
+    margin: 16px 0 16px 0;
+  }
+
+  .product-card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .product-card-title {
     font-family: 'PT Sans'sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -693,8 +784,9 @@ body {
     color: #000000;
     list-style-type: none;
   }
-  .product-card-price {
-  font-family: 'PT Sans'sans-serif;
+
+  .product-card-name {
+    font-family: 'PT Sans'sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -702,11 +794,19 @@ body {
     color: #333333;
   }
 
+  .product-card-description {
+    margin: 0 auto 16px 0;
+  }
+
+  .product-card-price {
+    margin: 0 0 16px 0;
+  }
+
   .product-card-about {
     display: inline-block;
     width: 133px;
     padding: 9px 0 8px 0;
-    margin: 0 0 16px 0;
+    margin: 0 auto 16px 0;
     border-radius: 4px;
     font-family: "PT Sans", sans-serif;
     font-size: 16px;
@@ -717,8 +817,58 @@ body {
     text-decoration: none;
     color: #ffffff;
     background-color: #756257;
+  }
 
+  .product-card-button {
+    display: inline-block;
+    min-width: 140px;
+    padding: 8px 20px;
+    margin: 0 0 16px 0;
+    border-radius: 4px;
+    font-family: inherit;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    background-color: #82B3D3;
+    height: 38px;
+  }
 
+  .product-card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .stars-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .stars-item {
+    margin-right: 6px;
+  }
+
+  .product-card-rating {
+    display: inline-block;
+    padding: 8px 22px;
+    min-width: 156px;
+    border-radius: 4px;
+    text-align: center;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #333333;
+    background-color: #F2F2F2;
   }
 
   .page-container {
@@ -821,9 +971,32 @@ body {
     margin: 0;
     list-style: none;
     padding: 0 70px 40px 70px;
+    position: relative;
+  }
+
+  .product-list::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 70px;
+    width: 1060px;
+    height: 0;
+    border: 1px solid #E6E6E6;
+    transform: rotate(180deg);
   }
 
   .pagination {
+    padding: 40px 0 60px 70px;
+  }
+
+  /* .pagination::before {
+    content: "";
+    width: 1060px;
+    height: 1px;
+    border: 1px solid black;
+  } */
+
+  .pagination-list {
     display: flex;
     margin: 0;
     padding: 0;
@@ -834,14 +1007,6 @@ body {
     margin-right: 8px;
     width: 60px;
     height: 60px;
-    padding:
-  }
-
-  .pagination-current {
-    width: 60px;
-    height: 60px;
-    background-color: #F2F2F2;
-    border-radius: 4px;
   }
 
   .pagination-link {
@@ -857,6 +1022,19 @@ body {
       background-color: #82B3D3;
       text-decoration: none;
       border-radius: 4px;
+    }
+
+    .pagination-current {
+      width: 60px;
+      height: 60px;
+      background-color: #F2F2F2;
+      color: #000000;
+      border-radius: 4px;
+    }
+
+    .pagination-dots {
+      color: #000000;
+      background-color: #ffffff;
     }
 
   .page-footer-container {
